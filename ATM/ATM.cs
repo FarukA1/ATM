@@ -107,10 +107,18 @@ public class ATM
             }catch { }
 
             if (option == 1) { deposit(currentUser); }
-            else if (option == 2) { withdraw(currentUser); }
-            else if (option == 3) { balance(currentUser); }
-            else if (option == 4) { break; }
-            else { option = 0; }
+            else if (option == 2) {
+                withdraw(currentUser);
+            }
+            else if (option == 3) {
+                balance(currentUser);
+            }
+            else if (option == 4) {
+                break;
+            }
+            else {
+                option = 0;
+            }
         }
         while (option != 4); 
         Console.WriteLine("Thank you! have a nice day");
